@@ -14,3 +14,11 @@ CLIPDROP_API = your-clipdrop-api-key
 CURRENCY = 'USD'
 RAZORPAY_KEY_ID=your-razorpay-key-id
 RAZORPAY_KEY_SECRET=your-razorpay-key-secret
+
+Test card details for Razorpay
+Country: US
+Visa--> 4384 7968 2770 3274, Random CVV, Any future date
+Mastercard --> 5312 6865 5677 9641,	Random CVV,	Any future date
+Amex --> 3782 8224 6310 005, Random CVV, Any future date
+Diners --> 6594 7300 0000 0001, Random CVV, Any future date
+
