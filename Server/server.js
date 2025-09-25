@@ -14,8 +14,6 @@ app.use(express.json())
 app.use(cors({
   origin: allowedOrigins,
   credentials: true,
-  //methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-  //allowedHeaders: ["Content-Type", "Authorization", "token"], // include any custom header you send
 }));
 await connectDB()
 

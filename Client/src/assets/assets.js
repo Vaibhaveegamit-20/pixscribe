@@ -14,6 +14,7 @@ import sample_img_5 from './sample_img_5.png'
 import sample_img_6 from './sample_img_6.png'
 import profile_img_1 from './profile_img_1.png'
 import profile_img_2 from './profile_img_2.png'
+import profile_img_3 from './profile_img_3.png'
 import step_icon_1 from './step_icon_1.svg'
 import step_icon_2 from './step_icon_2.svg'
 import step_icon_3 from './step_icon_3.svg'
@@ -24,6 +25,7 @@ import star_group from './star_group.png'
 import credit_star from './credit_star.svg'
 import profile_icon from './profile_icon.png'
 import user_icon from './user_icon.svg'
+import logout_icon from './logout_icon.svg'
 
 export const assets = {
   logo,
@@ -46,7 +48,8 @@ export const assets = {
   star_group,
   credit_star,
   profile_icon,
-  user_icon
+  user_icon,
+  logout_icon
 }
 
 export const stepsData = [
@@ -83,8 +86,8 @@ export const testimonialsData = [
     text: `I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`
   },
   {
-    image: profile_img_1,
-    name: 'Donald Jackman',
+    image: profile_img_3,
+    name: 'Rachael Wilson',
     role: ' Graphic Designer',
     stars: 5,
     text: `I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`
