@@ -15,7 +15,7 @@ export const generateImage = async (req, res) => {
       return res.json({ success: false, message: 'Missing details' })
     }
 
-    if (user.creditBalance === 0 || userModel.creditBalance < 0) {
+    if (user.creditBalance === 0 || user.creditBalance < 0) {
       return res.json({
         success: false,
         message: 'No Credit Balance',
@@ -23,7 +23,7 @@ export const generateImage = async (req, res) => {
       })
     }
 
-    const formData = new FormData
+    const formData = new FormData()
     formData.append('prompt', prompt)
 
     const { data } = await axios.post('https://clipdrop-api.co/text-to-image/v1', formData, {
@@ -31,7 +31,8 @@ export const generateImage = async (req, res) => {
         'x-api-key': process.env.CLIPDROP_API,
         ...formData.getHeaders(),
       },
-      responseType: 'arraybuffer'
+      responseType: 'arraybuffer',
+      timeout: 20000,   //optional
     })
 
     const base64Image = Buffer.from(data, 'binary').toString('base64')
